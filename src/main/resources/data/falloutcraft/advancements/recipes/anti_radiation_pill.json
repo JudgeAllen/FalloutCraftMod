@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "has_golden_apple": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:golden_apple"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["has_golden_apple"]]
+}

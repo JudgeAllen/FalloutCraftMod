@@ -1,0 +1,30 @@
+# Eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# IntelliJ IDEA
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# Gradle
+build
+.gradle
+
+# 其他
+eclipse
+run
+
+# VS Code
+.vscode
+
+# Forge MDK 提供的文件
+forge_README.txt
+forge*changelog.txt
+changelog.txt

@@ -1,0 +1,14 @@
+{
+  "itemGroup.falloutcraft": "FalloutCraft",
+  "item.falloutcraft.nuclear_bomb": "Nuclear Bomb",
+  "item.falloutcraft.geiger_counter": "Geiger Counter",
+  "item.falloutcraft.anti_radiation_pill": "Anti-Radiation Pill",
+  "effect.falloutcraft.radiation": "Radiation Sickness",
+  "sounds.falloutcraft.geiger_crackle": "Geiger Counter crackles",
+  "sounds.falloutcraft.nuclear_explosion": "Nuclear explosion",
+  "entity.falloutcraft.nuclear_bomb": "Nuclear Bomb",
+  "message.falloutcraft.geiger.safe": "Geiger Counter: §aSafe",
+  "message.falloutcraft.geiger.low": "Geiger Counter: §eLow",
+  "message.falloutcraft.geiger.elevated": "Geiger Counter: §6Elevated!",
+  "message.falloutcraft.geiger.high": "Geiger Counter: §cHIGH!"
+}

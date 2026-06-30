@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "minecraft:golden_apple" },
+    { "item": "minecraft:glowstone_dust" },
+    { "item": "minecraft:glass_bottle" }
+  ],
+  "result": {
+    "id": "falloutcraft:anti_radiation_pill",
+    "count": 1
+  }
+}

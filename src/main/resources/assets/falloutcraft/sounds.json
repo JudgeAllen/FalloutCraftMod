@@ -1,0 +1,14 @@
+{
+  "geiger_crackle": {
+    "subtitle": "sounds.falloutcraft.geiger_crackle",
+    "sounds": [
+      "falloutcraft:geiger_crackle"
+    ]
+  },
+  "nuclear_explosion": {
+    "subtitle": "sounds.falloutcraft.nuclear_explosion",
+    "sounds": [
+      "falloutcraft:nuclear_explosion"
+    ]
+  }
+}

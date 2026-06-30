@@ -1,0 +1,68 @@
+// 这是一个 Forge Mod 工作区的最小化配置。
+// 更复杂的示例（包括 AccessTransformers、Jar-in-Jar 和 Mixin）请参见我们的示例仓库。
+// https://github.com/MinecraftForge/MDKExamples
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'eclipse'
+    id 'net.minecraftforge.gradle' version '[7.0.3,8)'
+}
+
+version = '1.0.0'
+group = 'com.falloutcraft.fallout'
+
+// Mojang 在 1.20.5+ 版本中向最终用户提供了 Java 21，因此你的 Mod 应面向 Java 21。
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+// 包含生成资源
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+minecraft {
+    mappings channel: 'official', version: '1.21.11'
+
+    runs {
+        configureEach {
+            workingDir = layout.projectDirectory.dir('run')
+
+            systemProperty 'eventbus.api.strictRuntimeChecks', 'true'
+            systemProperty 'forge.enabledGameTestNamespaces', 'falloutcraft'
+        }
+
+        register('client')
+
+        register('server') {
+            args '--nogui'
+        }
+
+        register('gameTestServer')
+
+        register('data') {
+            workingDir = layout.projectDirectory.dir('run-data')
+
+            args '--mod', 'falloutcraft', '--all', '--output', layout.projectDirectory.dir('src/generated/resources'), '--existing', layout.projectDirectory.dir('src/main/resources')
+        }
+    }
+}
+
+repositories {
+    minecraft.mavenizer(it) // 在 Kotlin 中，it = this
+    maven fg.forgeMaven
+    maven fg.minecraftLibsMaven
+    mavenCentral()
+}
+
+dependencies {
+    implementation minecraft.dependency('net.minecraftforge:forge:1.21.11-61.1.0')
+    annotationProcessor 'net.minecraftforge:eventbus-validator:7.0.1'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    // 在 Java 编译中使用 UTF-8 字符集
+    // 从 Java 18 开始默认如此，但此处显式设置以确保无论 Java 或 Gradle 版本如何都能正常工作
+    options.encoding = 'UTF-8'
+}
+
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

@@ -1,0 +1,14 @@
+{
+  "itemGroup.falloutcraft": "辐射纪元",
+  "item.falloutcraft.nuclear_bomb": "核弹",
+  "item.falloutcraft.geiger_counter": "盖革计数器",
+  "item.falloutcraft.anti_radiation_pill": "抗辐射药丸",
+  "effect.falloutcraft.radiation": "辐射病",
+  "sounds.falloutcraft.geiger_crackle": "盖革计数器：噼啪声",
+  "sounds.falloutcraft.nuclear_explosion": "核爆炸",
+  "entity.falloutcraft.nuclear_bomb": "核弹",
+  "message.falloutcraft.geiger.safe": "盖革计数器：§a安全",
+  "message.falloutcraft.geiger.low": "盖革计数器：§e低辐射",
+  "message.falloutcraft.geiger.elevated": "盖革计数器：§6辐射升高！",
+  "message.falloutcraft.geiger.high": "盖革计数器：§c高辐射！"
+}

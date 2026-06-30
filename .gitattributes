@@ -1,0 +1,4 @@
+# 对生成文件禁用 autocrlf，它们始终以 LF 格式生成
+# 在此添加任何额外的文件或路径，以使 git 在只有行尾变更时不再报告文件已更改
+src/generated/**/.cache/cache text eol=lf
+src/generated/**/*.json text eol=lf

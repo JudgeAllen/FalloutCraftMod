@@ -1,0 +1,37 @@
+# 参见 https://docs.minecraftforge.net/en/1.21.x/gettingstarted/modfiles/#modstoml
+# 你可以用 mods.toml 做很多事情，这里并未包含本 MDK 中的所有字段
+# 参考：https://github.com/MinecraftForge/MDKExamples
+
+modLoader="javafml"
+loaderVersion="[61,)"
+license="All Rights Reserved"
+#issueTrackerURL="https://github.com/MyOrganization/FalloutCraft/" #可选
+#clientSideOnly=true #可选，默认为 false
+
+[[mods]]
+modId="falloutcraft"
+version="1.0.0"
+displayName="辐射纪元"
+#updateJSONURL="https://example.com/updates.json" #可选
+#displayURL="https://example.com/" #可选
+#logoFile="examplemod.png" #可选
+#credits="" #可选
+authors="You" #可选
+#displayTest="MATCH_VERSION" #可选，非 clientSideOnly 时默认为 MATCH_VERSION，否则为 IGNORE_ALL_VERSION
+
+description='''一个核弹主题的 Minecraft Mod。
+在这片废土上，只有最强者才能生存。'''
+
+[[dependencies.falloutcraft]] #推荐
+    modId="forge"
+    mandatory=true
+    versionRange="[61,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.falloutcraft]] #推荐
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.11,1.22,)"
+    ordering="NONE"
+    side="BOTH"

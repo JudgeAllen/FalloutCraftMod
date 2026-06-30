@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "has_tnt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:tnt"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["has_tnt"]]
+}

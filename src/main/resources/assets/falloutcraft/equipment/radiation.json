@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "falloutcraft:radiation"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "falloutcraft:radiation"
+      }
+    ]
+  }
+}

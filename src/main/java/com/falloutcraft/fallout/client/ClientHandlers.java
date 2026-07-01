@@ -1,6 +1,8 @@
 package com.falloutcraft.fallout.client;
 
 import com.falloutcraft.fallout.FalloutCraft;
+import com.falloutcraft.fallout.block.FalloutBlocks;
+import com.falloutcraft.fallout.client.gui.NuclearReactorScreen;
 import com.falloutcraft.fallout.effect.FalloutEffects;
 import com.falloutcraft.fallout.entity.FalloutEntities;
 import net.minecraft.client.DeltaTracker;
@@ -16,6 +18,7 @@ import net.minecraftforge.client.gui.overlay.ForgeLayer;
 import net.minecraftforge.client.gui.overlay.ForgeLayeredDraw;
 import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 /**
  * 客户端事件处理类
@@ -29,6 +32,21 @@ public final class ClientHandlers {
         public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
             event.registerEntityRenderer(FalloutEntities.NUCLEAR_BOMB.get(),
                     context -> new ThrownItemRenderer<>(context, 1.0F, true));
+            event.registerEntityRenderer(FalloutEntities.TACTICAL_NUKE.get(),
+                    context -> new ThrownItemRenderer<>(context, 1.0F, true));
+            event.registerEntityRenderer(FalloutEntities.THERMO_NUKE.get(),
+                    context -> new ThrownItemRenderer<>(context, 1.0F, true));
+        }
+    }
+
+    // FMLClientSetupEvent 在 MOD 总线上，需要单独的订阅者
+    @Mod.EventBusSubscriber(modid = FalloutCraft.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+    public static final class ModBusEvents {
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            event.enqueueWork(() ->
+                net.minecraft.client.gui.screens.MenuScreens.register(
+                        FalloutBlocks.REACTOR_MENU.get(), NuclearReactorScreen::new));
         }
     }
 

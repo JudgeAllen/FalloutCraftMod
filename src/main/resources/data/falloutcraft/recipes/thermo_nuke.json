@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PCP",
+    "CTC",
+    "PDP"
+  ],
+  "key": {
+    "C": { "item": "falloutcraft:nuclear_core" },
+    "P": { "item": "falloutcraft:plutonium_ingot" },
+    "T": { "item": "minecraft:tnt" },
+    "D": { "item": "minecraft:diamond_block" }
+  },
+  "result": {
+    "id": "falloutcraft:thermo_nuke",
+    "count": 1
+  }
+}

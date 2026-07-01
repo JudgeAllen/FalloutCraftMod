@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "falloutcraft:block/nuclear_reactor_side",
+    "north": "falloutcraft:block/nuclear_reactor_side",
+    "south": "falloutcraft:block/nuclear_reactor_side",
+    "east": "falloutcraft:block/nuclear_reactor_side",
+    "west": "falloutcraft:block/nuclear_reactor_side",
+    "up": "falloutcraft:block/nuclear_reactor_top",
+    "down": "falloutcraft:block/nuclear_reactor_bottom"
+  }
+}

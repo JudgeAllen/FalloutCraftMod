@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IBI",
+    "IRP",
+    "IBI"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_block" },
+    "B": { "item": "falloutcraft:uranium_ingot" },
+    "R": { "item": "minecraft:redstone_block" },
+    "P": { "item": "falloutcraft:plutonium_ingot" }
+  },
+  "result": {
+    "id": "falloutcraft:nuclear_core",
+    "count": 1
+  }
+}

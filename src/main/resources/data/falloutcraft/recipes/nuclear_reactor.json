@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "UCU",
+    "III"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_block" },
+    "U": { "item": "falloutcraft:uranium_ingot" },
+    "C": { "item": "falloutcraft:nuclear_core" }
+  },
+  "result": {
+    "id": "falloutcraft:nuclear_reactor",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "U U",
+    "ULU",
+    "   "
+  ],
+  "key": {
+    "U": { "item": "falloutcraft:uranium_ingot" },
+    "L": { "item": "minecraft:leather" }
+  },
+  "result": {
+    "id": "falloutcraft:radiation_boots",
+    "count": 1
+  }
+}

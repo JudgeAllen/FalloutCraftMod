@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "has_raw_uranium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["falloutcraft:raw_uranium"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["has_raw_uranium"]]
+}

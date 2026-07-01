@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "U U",
+    "UIU",
+    "UUU"
+  ],
+  "key": {
+    "U": { "item": "falloutcraft:uranium_ingot" },
+    "I": { "item": "minecraft:iron_block" }
+  },
+  "result": {
+    "id": "falloutcraft:radiation_chestplate",
+    "count": 1
+  }
+}

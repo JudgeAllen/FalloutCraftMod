@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "falloutcraft:uranium_ingot" },
+    { "item": "falloutcraft:uranium_ingot" },
+    { "item": "falloutcraft:uranium_ingot" },
+    { "item": "falloutcraft:uranium_ingot" },
+    { "item": "minecraft:tnt" }
+  ],
+  "result": {
+    "id": "falloutcraft:tactical_nuke",
+    "count": 1
+  }
+}

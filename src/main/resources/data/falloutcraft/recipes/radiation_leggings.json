@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "UUU",
+    "ULU",
+    "U U"
+  ],
+  "key": {
+    "U": { "item": "falloutcraft:uranium_ingot" },
+    "L": { "item": "minecraft:leather" }
+  },
+  "result": {
+    "id": "falloutcraft:radiation_leggings",
+    "count": 1
+  }
+}

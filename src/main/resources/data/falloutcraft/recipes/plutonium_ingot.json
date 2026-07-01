@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "falloutcraft:uranium_ingot" },
+    { "item": "falloutcraft:uranium_ingot" }
+  ],
+  "result": {
+    "id": "falloutcraft:plutonium_ingot",
+    "count": 1
+  }
+}

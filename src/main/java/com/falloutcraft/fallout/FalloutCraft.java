@@ -1,5 +1,6 @@
 package com.falloutcraft.fallout;
 
+import com.falloutcraft.fallout.block.FalloutBlocks;
 import com.falloutcraft.fallout.client.ClientHandlers;
 import com.falloutcraft.fallout.effect.FalloutEffects;
 import com.falloutcraft.fallout.entity.FalloutEntities;
@@ -46,7 +47,20 @@ public final class FalloutCraft {
                     .icon(() -> new ItemStack(FalloutItems.NUCLEAR_BOMB.get()))
                     .title(Component.translatable("itemGroup.falloutcraft"))
                     .displayItems((parameters, output) -> {
+                        output.accept(FalloutBlocks.URANIUM_ORE_ITEM.get());
+                        output.accept(FalloutItems.RAW_URANIUM.get());
+                        output.accept(FalloutItems.URANIUM_INGOT.get());
+                        output.accept(FalloutItems.PLUTONIUM_INGOT.get());
+                        output.accept(FalloutItems.NUCLEAR_CORE.get());
+                        output.accept(FalloutItems.RADIATION_HELMET.get());
+                        output.accept(FalloutItems.RADIATION_CHESTPLATE.get());
+                        output.accept(FalloutItems.RADIATION_LEGGINGS.get());
+                        output.accept(FalloutItems.RADIATION_BOOTS.get());
+                        output.accept(FalloutItems.TACTICAL_NUKE.get());
                         output.accept(FalloutItems.NUCLEAR_BOMB.get());
+                        output.accept(FalloutItems.THERMO_NUKE.get());
+                        output.accept(FalloutBlocks.NUCLEAR_REACTOR_ITEM.get());
+                        output.accept(FalloutItems.NUCLEAR_WASTE.get());
                         output.accept(FalloutItems.GEIGER_COUNTER.get());
                         output.accept(FalloutItems.ANTI_RADIATION_PILL.get());
                     })
@@ -66,6 +80,9 @@ public final class FalloutCraft {
         FMLCommonSetupEvent.getBus(modBusGroup).addListener(this::commonSetup);
 
         // 注册所有延迟注册器到模组事件总线上
+        FalloutBlocks.BLOCKS.register(modBusGroup);
+        FalloutBlocks.BLOCK_ENTITY_TYPES.register(modBusGroup);
+        FalloutBlocks.MENU_TYPES.register(modBusGroup);
         FalloutItems.ITEMS.register(modBusGroup);
         FalloutEntities.ENTITY_TYPES.register(modBusGroup);
         FalloutEffects.MOB_EFFECTS.register(modBusGroup);

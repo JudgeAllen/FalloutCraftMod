@@ -21,4 +21,22 @@ public final class FalloutEntities {
                             .updateInterval(2)
                             .build(ResourceKey.create(Registries.ENTITY_TYPE,
                                     FalloutCraft.id("nuclear_bomb"))));
+
+    public static final RegistryObject<EntityType<TacticalNukeEntity>> TACTICAL_NUKE =
+            ENTITY_TYPES.register("tactical_nuke",
+                    () -> EntityType.Builder.<TacticalNukeEntity>of(TacticalNukeEntity::new, MobCategory.MISC)
+                            .sized(0.4F, 0.4F)
+                            .clientTrackingRange(64)
+                            .updateInterval(2)
+                            .build(ResourceKey.create(Registries.ENTITY_TYPE,
+                                    FalloutCraft.id("tactical_nuke"))));
+
+    public static final RegistryObject<EntityType<ThermoNukeEntity>> THERMO_NUKE =
+            ENTITY_TYPES.register("thermo_nuke",
+                    () -> EntityType.Builder.<ThermoNukeEntity>of(ThermoNukeEntity::new, MobCategory.MISC)
+                            .sized(0.6F, 0.6F)
+                            .clientTrackingRange(64)
+                            .updateInterval(2)
+                            .build(ResourceKey.create(Registries.ENTITY_TYPE,
+                                    FalloutCraft.id("thermo_nuke"))));
 }
